@@ -38,7 +38,8 @@ class KafkaConsumer:
         #
         self.broker_properties = {
                 "bootstrap.servers": "PLAINTEXT://kafka0:19092",
-                "group.id": "tornado-web"
+                "group.id": "tornado-web",
+                "auto.offset.reset": "earliest"
                 #
                 # TODO
                 #

@@ -3,6 +3,10 @@
   "name": "set_weather",
   "fields": [
     {"name": "temperature", "type": "float"},
-    {"name": "status", "type": "string"}
+    {"name": "status", "type": {
+      "name": "weather_name",
+      "type":"enum",
+      "symbols" : ["sunny", "partly_cloudy", "cloudy", "windy", "precipitation"]
+    }}
   ]
 }

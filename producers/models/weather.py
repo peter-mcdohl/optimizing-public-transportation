@@ -99,6 +99,9 @@ class Weather(Producer):
                     "key_schema": json.dumps(Weather.key_schema),
                     "records": [
                         {
+                            "key": {
+                                "timestamp": self.time_millis()
+                            },
                             "value": {
                                 "temperature": self.temp,
                                 "status": self.status.name
